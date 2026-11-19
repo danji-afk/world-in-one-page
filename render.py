@@ -256,7 +256,7 @@ line([(106,68),(792,68)],NAVY)
 rect((806,20,1006,77),NAVY)
 text(906,25,'40 STORIES',18,'bold',WHITE,align='center')
 text(906,48,'6 CONTINENTS · ONE PAGE',10,'bold',WHITE,.94,align='center')
-text(449,72,'Everything on this page happened, or was first reported, on Wednesday 18 November 2026.',10,'serif',MUTED,.89,align='center')
+text(449,72,'Everything on this page happened, or was first reported, on Wednesday 18 November 2026.',11,'serif',MUTED,.89,align='center')
 
 HEROES=[
 (1,'ASIA · SUMMIT','Asia-Pacific','AP · CNN',"Xi welcomes Trump at Shenzhen’s airport", "A rare honour from China’s leader. Trump and Putin shake hands at the APEC banquet; their three-way talks with Xi are on Thursday, 19 Nov."),
@@ -268,10 +268,10 @@ for i,(n,tag,region,source,headline,body) in enumerate(HEROES):
     rect((x,y,x+w,bottom),WHITE,INK)
     circle_number(x+17,y+15,n)
     chip(x+32,y+7,tag,REGIONS[region])
-    text(x+w-9,y+27,source,10,'bold',MUTED,.88,align='right')
+    text(x+w-9,y+27,source,11,'bold',MUTED,.88,align='right')
     block(x+10,y+42,headline,w-20,19,'display',leading=21,bottom=y+85)
     art(n,x+10,y+90,w-20,61)
-    block(x+10,y+159,body,w-20,11,leading=12.4,bottom=bottom-7)
+    block(x+10,y+159,body,w-20,12,leading=13.2,bottom=bottom-7)
 
 section(313,'EIGHT MORE STORIES TO KNOW','04—11 / THE BRIEFING')
 MEDIUM=[
@@ -282,17 +282,17 @@ MEDIUM=[
 (8,'EUROPE · UKRAINE AID','Europe','EU','EU proposes a €45bn loan to fund Ukraine in 2027','Two-thirds of a €70bn gap, repaid only once Russia pays reparations.'),
 (9,'EUROPE · ECONOMY','Europe','ONS','UK inflation climbs to 3.6%, one-year high','Fuel prices and an earlier tobacco tax rise pushed October CPI up from 3.5%.'),
 (10,'MIDDLE EAST · GAZA','Middle East','REUTERS','Israeli tanks roll into central Gaza near Nuseirat','The army says it is destroying a tunnel; three are killed, hospitals say.'),
-(11,'AMERICAS · US POLITICS','Americas','NPR · CBS','Jeffries wins Democrats’ nod for House Speaker','A 251-11 caucus vote puts him on course to be the first Black Speaker in January 2027.')]
+(11,'AMERICAS · US POLITICS','Americas','NPR · CBS','Jeffries wins Democrats’ nod for House Speaker','A 251-11 caucus vote puts him on course to be the first Black Speaker in 2027.')]
 for i,(n,tag,region,source,headline,body) in enumerate(MEDIUM):
     x=18+(i%4)*250; y=332+(i//4)*124; w=238
     rect((x,y,x+w,y+124),WHITE,'#a9a295')
     circle_number(x+13,y+12,n,REGIONS[region],9)
     chip(x+25,y+5,tag,REGIONS[region])
-    text(x+w-7,y+23,source,10,'bold',MUTED,.85,align='right')
+    text(x+w-7,y+23,source,11,'bold',MUTED,.85,align='right')
     block(x+7,y+35,headline,w-14,13,'bold',leading=14,bottom=y+63,cond=.91)
     art(n,x+7,y+66,w-14,32)
     # Body occupies its own two-line strip below the illustration, in the gutter.
-    block(x+7,y+102,body,w-14,10,leading=11,bottom=y+124,cond=.88)
+    block(x+7,y+102,body,w-14,11,leading=12,bottom=y+125,cond=.92)
 
 # Dot-matrix atlas, intentionally diagrammatic; pins use the list's story IDs.
 section(584,'WHERE IT HAPPENED','NUMBERED PINS REFER TO THE STORIES')
@@ -352,48 +352,47 @@ text(32,688,'25.9bn km — Voyager 1 from Earth: one light-day',10,'bold',NAVY)
 
 section(715,'ALSO ON WEDNESDAY 18 NOVEMBER','12—40 / AROUND THE WORLD')
 BRIEFS=[
-(12,'Manila','Trump hails “biggest” Philippine trade deal','Asia-Pacific'),
-(13,'Ottawa','Carney and Xi agree tariff relief on pork, seafood, metals','Americas'),
-(14,'Japan','Russian military aircraft violate airspace near Okinoshima; fighters scramble','Asia-Pacific'),
-(15,'Washington','Rubio: no evidence tech outages are linked or “nefarious”','Americas'),
-(16,'Kyiv’s allies','Canada adds $108M; Germany: €11.6bn for 2027; UK: 1,000+ missiles','Europe'),
-(17,'Moscow','Russia and China hail new level of military-technical cooperation','Europe'),
-(18,'Russia','Ukrainian strikes cut oil refining 45%; 15 of 35 refineries hit','Europe'),
-(19,'Iraq','Oil flows to Turkey again after 12 years, bypassing Hormuz','Middle East'),
-(20,'US','Trump “taking seriously” Iran dirty-bomb report; Iran denies it','Americas'),
-(21,'Tehran','Army chief vows “more crushing” response; 3rd US carrier joins Gulf','Middle East'),
-(22,'Bahrain','Shia clerics jailed for life over alleged Iran plot','Middle East'),
-(23,'Pretoria','South Africa summons Nigeria’s envoy over social-media remarks','Africa'),
-(24,'Bangladesh','Police tear-gas garment wage protests','Asia-Pacific'),
-(25,'Khartoum','War trauma drives wave of drug addiction, aid workers say','Africa'),
-(26,'Frankfurt','Watchdog probes Deutsche Bank leak of 15M files','Europe'),
-(27,'Brussels','ECB likens AI boom to dotcom bubble as tech debt piles up','Europe'),
-(28,'Mexico City','Sheinbaum asks Xi for panda mate — the only non-Chinese panda','Americas'),
-(29,'Silicon Valley','Alleged Russian agent arrested spying on tech-defence firm','Americas'),
-(30,'Caracas','US Defence Secretary makes surprise visit, meets Rodríguez','Americas'),
-(31,'San Salvador','Bukele confirms airstrike on Haitian gang leader’s mansion','Americas'),
-(32,'California','Waymo pulls robotaxis off highways after “imminent hazard” ban','Americas'),
-(33,'Portugal','Bruna and Charles set November rain and wind records','Europe'),
-(34,'Baghdad','Six French IS members jailed for life; 5,700 trials from Sun 22 Nov','Middle East'),
-(35,'Madrid','Julio Iglesias, 83, ordered to testify in sexual-offence case','Europe'),
-(36,'New York','Trump ordered to give sworn BBC testimony by January 2027','Americas'),
-(37,'Brussels','EU auditors warn “forever chemicals” rules are failing','Europe'),
-(38,'New Delhi','Modi returns after ASEAN summit; trade push continues','Asia-Pacific'),
-(39,'Astana','Middle Corridor plan targets 30M tonnes by 2029','Asia-Pacific'),
-(40,'Tokyo','GTA VI countdown billboards go up; release tomorrow, 19 Nov','Asia-Pacific')]
+(12,'Manila','Trump hails "biggest" trade deal','Asia-Pacific'),
+(13,'Ottawa','Carney, Xi agree tariff relief','Americas'),
+(14,'Japan','Jets scramble after Russian incursion','Asia-Pacific'),
+(15,'Washington','Rubio: no evidence outages linked','Americas'),
+(16,'Kyiv aid','Canada $108M; DE €11.6bn; UK missiles','Europe'),
+(17,'Moscow','Russia, China hail closer military ties','Europe'),
+(18,'Russia','Strikes cut refining 45%; 15 of 35 hit','Europe'),
+(19,'Iraq','Oil to Turkey resumes after 12 years','Middle East'),
+(20,'US','Trump weighs dirty-bomb report','Americas'),
+(21,'Tehran','Army vows response; 3rd carrier joins','Middle East'),
+(22,'Bahrain','Shia clerics get life for Iran plot','Middle East'),
+(23,'Pretoria','Nigeria envoy summoned over remarks','Africa'),
+(24,'Bangladesh','Tear gas at wage protests','Asia-Pacific'),
+(25,'Khartoum','War trauma drives drug addiction','Africa'),
+(26,'Frankfurt','Deutsche Bank probed over leak','Europe'),
+(27,'Brussels','ECB likens AI boom to dotcom bubble','Europe'),
+(28,'Mexico','Sheinbaum asks Xi for panda mate','Americas'),
+(29,'Silicon Valley','Russian spy suspect arrested','Americas'),
+(30,'Caracas','US defence chief makes surprise visit','Americas'),
+(31,'San Salvador','Bukele confirms gang-mansion strike','Americas'),
+(32,'California','Waymo pulls robotaxis off highways','Americas'),
+(33,'Portugal','Bruna, Charles set rain records','Europe'),
+(34,'Baghdad','French IS members jailed for life','Middle East'),
+(35,'Madrid','Iglesias, 83, ordered to testify','Europe'),
+(36,'New York','Trump to give sworn BBC testimony','Americas'),
+(37,'Brussels','EU auditors: chemicals rules fail','Europe'),
+(38,'New Delhi','Modi back from ASEAN; trade push on','Asia-Pacific'),
+(39,'Astana','Middle Corridor targets 30M tonnes','Asia-Pacific'),
+(40,'Tokyo','GTA VI billboards up; out tomorrow','Asia-Pacific')]
 for i,(n,place,story,region) in enumerate(BRIEFS):
-    col=0 if i<15 else 1; row=i if i<15 else i-15
-    x=18+col*502; y=734+row*12.6
-    if row%2==0: rect((x,y-1,x+486,y+11.3),'#eee7d9')
-    circle_number(x+8,y+5,n,REGIONS[region],6.3)
-    tx=x+20
-    # A fixed condensed setting keeps every brief on one line without reducing size.
-    cond=.81
+    col,row = (0,i) if i<15 else (1,i-15)
+    x=18+col*502; y=734+row*13.0
+    if row%2==0: rect((x,y-1,x+318,y+12.2),WHITE)
+    circle_number(x+9,y+6,n,REGIONS[region],6.3)
+    tx=x+21
+    cond=.86
     label=place+': '
-    ww=text(tx,y,label,10,'bold',INK,cond)
-    text(tx+ww,y,story,10,'sans',INK,cond,maxw=486-20-ww)
+    ww=text(tx,y,label,11.5,'bold',INK,cond)
+    text(tx+ww,y,story,11.5,'sans',INK,cond,maxw=486-21-ww)
 line([(512,734),(512,920)],'#c5bba7')
-text(764,913,'40 stories. One extraordinary Wednesday.',10,'serif',RED,align='center')
+text(764,913,'40 stories. One extraordinary Wednesday.',12,'serif',RED,align='center')
 
 # Day in numbers: fixed tiles, no implied comparative scale.
 rect((18,929,1006,969),NAVY)
